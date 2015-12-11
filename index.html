@@ -12,8 +12,7 @@
   <body>
 
     <!-- Top Bar -->
-
-    <!-- Menu button small view -->
+      <!-- Menu button small view -->
     <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Ribbit</div>
@@ -28,22 +27,28 @@
           </ul>
         </div>
         <div class="top-bar-right">
-          <ul class="menu vertical medium-horizontal">
+          <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+
             <li><a href="#">Home</a></li>
             <li><a href="#">About Ribbit</a></li>
-            <li><a href="#">Treehouse</a></li>
+            <li class="dropdown menu" data-dropdown-menu>
+              <a href="#">Treehouse</a>
+              <ul class="menu">
+                <li><a href="#">About Treehouse</a></li>
+                <li><a href="#">Video Library</a></li>
+                <li><a href="#">Tracks</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
     <!-- End Top Bar -->
 
     <!-- Headline Content -->
-
     <div class="row ">
       <div class="large-12 columns">
-        <div class="callout secondary">
+        <div >
           <h1>Self-destructing message app</h1>
           <p class="lead">
           Learn how to build this fun little app by signing up for a Treehouse account today.
@@ -52,10 +57,19 @@
             <a class="button success" href="#">Download the app</a>
             <a class="button hollow show-for-medium" href="#">Text me the link</a>
           </p>
+          <div>
+            <h1>Learn how to build it for iOS</h1>
+            <p class="lead">We'll teach you how to build it from scratch!</p>
+            <p><a class="button" href="#">Get started today!</a>
+          </div>
+          <div>
+            <h1>Learn how to build it for Android</h1>
+            <p class="lead">We'll teach you how to build it from scratch!</p>
+            <p><a class="button" href="#">Get started today!</a></p>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- End Headline Content -->
 
 
